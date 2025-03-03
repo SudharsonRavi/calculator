@@ -19,7 +19,7 @@ jobs:
           distribution: 'temurin'  # Use Java 17 (change if needed)
 
       - name: Compile Java Code
-        run: javac Calculator.java  # Compiles the Java program
+        run: javac src/Calculator.java  # Compiles the Java program
 
-      # - name: Run Calculator
-      #   run: java Calculator  # Runs the Java program
+      - name: Run Calculator
+        run: java Calculator  # Runs the Java program
