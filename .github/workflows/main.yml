@@ -18,8 +18,8 @@ jobs:
           java-version: '17'
           distribution: 'temurin'  # Use Java 17 (change if needed)
 
-      # - name: Compile Java Code
-      #   run: javac Calculator.java  # Compiles the Java program
+      - name: Compile Java Code
+        run: javac Calculator.java  # Compiles the Java program
 
       # - name: Run Calculator
       #   run: java Calculator  # Runs the Java program
