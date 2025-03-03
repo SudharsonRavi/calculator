@@ -6,18 +6,27 @@ on:
 
 jobs:
   build_and_run:
-    runs-on: ubuntu-latest  # Runs on a Linux virtual machine
+    runs-on: windows-latest
+
 
     steps:
-      - name: Checkout Repository
-        uses: actions/checkout@v3  # Fetches repo code
+      - run: echo"hi iam in linux" 
+    # Runs on a Linux virtual machine
 
-      - name: Set up Java
-        uses: actions/setup-java@v3
-        with:
-          java-version: '17'
-          distribution: 'temurin'  # Use Java 17 (change if needed)
+    # steps:
+    #   - name: Checkout Repository
+    #     uses: actions/checkout@v3  # Fetches repo code
 
+    #   - name: Set up Java
+    #     uses: actions/setup-java@v3
+    #     with:
+    #       java-version: '17'
+    #       distribution: 'temurin'  # Use Java 17 (change if needed)
+  builds-linux:
+    runs-on: ubuntu-latest
+
+    steps:
+      - run: echo"hi iam in linux" 
       # - name: Compile Java Code
       #   run: javac src/Calculator.java  
       #   # Compiles the Java program
@@ -27,9 +36,9 @@ jobs:
 
       # - name: Run Calculator
       #   run: java src.Calculator  
-      - name: Compile Java Code
-        run: javac -d bin src/Calculator.java  # Compile into bin/
+      # - name: Compile Java Code
+      #   run: javac -d bin src/Calculator.java  # Compile into bin/
 
-      - name: Run Calculator
-        run: java -cp bin src.Calculator  # Use full package name
+      # - name: Run Calculator
+      #   run: java -cp bin src.Calculator  # Use full package name
 # Runs the Java program
