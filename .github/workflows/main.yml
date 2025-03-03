@@ -10,7 +10,7 @@ jobs:
 
 
     steps:
-      - run: echo"hi iam in linux" 
+      - run: echo "hi iam in linux" 
     # Runs on a Linux virtual machine
 
     # steps:
@@ -26,7 +26,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - run: echo"hi iam in linux" 
+      - run: echo "hi iam in linux" 
       # - name: Compile Java Code
       #   run: javac src/Calculator.java  
       #   # Compiles the Java program
