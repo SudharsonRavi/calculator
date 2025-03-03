@@ -22,4 +22,4 @@ jobs:
         run: javac src/Calculator.java  # Compiles the Java program
 
       - name: Run Calculator
-        run: java src/Calculator  # Runs the Java program
+        run: java src.Calculator  # Runs the Java program
